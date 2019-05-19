@@ -1,2 +1,2 @@
 # .emacs.d
-emacs.d for Python web development, C/C++
+My personal init directory - python web development, and c/c++
