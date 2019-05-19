@@ -75,4 +75,8 @@
 ;; set appearance of a tab that is represented by 4 spaces
 (setq-default tab-width 4)
 
+;; Add diminish and delight support
+(use-package delight)
+(use-package diminish)
+
 (provide 'init-general)
