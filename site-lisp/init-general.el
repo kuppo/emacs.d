@@ -79,4 +79,11 @@
 (use-package delight)
 (use-package diminish)
 
+;; Change the default mode bar behavious.
+(use-package emacs
+  :delight
+  (auto-fill-function " AF")
+  (visual-line-mode)    ;; Hide visual line mode string
+  (eldoc-mode))         ;; Hide eldoc mode string
+
 (provide 'init-general)
