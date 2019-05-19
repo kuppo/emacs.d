@@ -9,6 +9,9 @@
 ;; DO NOT COMMENT IT
 (require 'init-general)
 
+;; Initialize ivy
+(require 'init-ivy)
+
 ;; Initialize webmode
 (require 'init-webmode)
 
@@ -19,7 +22,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (auto-package-update elpy py-autopep8 emmet-mode web-mode company-web yasnippet flycheck use-package)))
+    (counsel swiper auto-package-update elpy py-autopep8 emmet-mode web-mode company-web yasnippet flycheck use-package)))
  '(python-shell-interpreter "python3"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
