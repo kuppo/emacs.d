@@ -84,6 +84,13 @@
   :delight
   (auto-fill-function " AF")
   (visual-line-mode)    ;; Hide visual line mode string
-  (eldoc-mode))         ;; Hide eldoc mode string
+  (eldoc-mode)         ;; Hide eldoc mode string
+
+  :bind
+  ("S-C-<left>" . shrink-window-horizontally)
+  ("S-C-<right>" . enlarge-window-horizontally)
+  ("S-C-<down>" . shrink-window)
+  ("S-C-<up>" . enlarge-window))
+
 
 (provide 'init-general)
