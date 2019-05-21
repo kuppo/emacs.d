@@ -12,6 +12,9 @@
 ;; Initialize ivy
 (require 'init-ivy)
 
+;; Initialize lsp-mod
+(require 'init-lsp)
+
 ;; Initialize webmode
 (require 'init-webmode)
 
