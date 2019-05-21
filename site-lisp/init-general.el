@@ -1,10 +1,17 @@
+;; Restart emacs, make you configuring emacs a lot easier. it only have one
+;; command `restart-emacs`.
+;; with a single universal-argument (C-u) Emacs is restarted with --debug-init flag
+;; with two universal-argument (C-u C-u) Emacs is restarted with -Q flag
+;; with three universal-argument (C-u C-u C-u) the user is prompted for the arguments
+(use-package restart-emacs)
+
 ;; Show line number
 (if (version<= "26.0.50" emacs-version)
     (global-display-line-numbers-mode)
   (linum-mode 1))
 
 ;; Show column number
-'(column-number-mode 1)
+(column-number-mode 1)
 
 ;; Save cursor position accross sessions
 (if (version< emacs-version "25.0")
