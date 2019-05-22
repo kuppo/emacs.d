@@ -9,6 +9,9 @@
 ;; DO NOT COMMENT IT
 (require 'init-general)
 
+;; Initialize smartparens
+(require 'init-smartparens)
+
 ;; Initialize ivy
 (require 'init-ivy)
 
@@ -20,6 +23,7 @@
 
 ;; Initialize elfeed
 (require 'init-elfeed)
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
