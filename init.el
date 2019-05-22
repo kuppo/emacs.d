@@ -12,6 +12,12 @@
 ;; Initialize smartparens
 (require 'init-smartparens)
 
+;; Initialize doom theme, for better looking
+(require 'init-doomtheme)
+
+;; Initialize doom modeline, for beautiful mode bar.
+(require 'init-doommodeline)
+
 ;; Initialize ivy
 (require 'init-ivy)
 
