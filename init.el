@@ -1,3 +1,6 @@
+;; Define a constant to trick emacs start up time
+(defconst emacs-start-time (current-time))
+
 ;; Add the emacs lisp snippets for load variant functionalities.
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
 
@@ -46,3 +49,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;;; show package load time
+(let ((elapsed (float-time (time-subtract (current-time)
+                                          emacs-start-time))))
+  (message "Loaded packages in %.3fs" elapsed))
