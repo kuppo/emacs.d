@@ -9,7 +9,6 @@
 
 ;; Basic configurations along with some personal preferences, change it if you
 ;; don't like it.
-;; DO NOT COMMENT IT
 (require 'init-general)
 
 ;; Initialize smartparens
@@ -20,6 +19,9 @@
 
 ;; Initialize doom modeline, for beautiful mode bar.
 (require 'init-doommodeline)
+
+;; Initialize company mode.
+(require 'init-company)
 
 ;; Initialize ivy
 (require 'init-ivy)

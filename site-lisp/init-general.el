@@ -51,22 +51,6 @@
   (show-paren-mode 1)
   (setq show-paren-style 'mixed) )
 
-;; Insert parenthesis as pairs
-;; (electric-pair-mode 1)
-;; (setq electric-pair-pairs ; Pairs you want to affected all the time.
-;;       '(
-;;         (?\" . ?\")
-;;         (?\{ . ?\})
-;;         (?\( . ?\))
-;;         (?\' . ?\')
-;;         (?\‘ . ?\’)
-;;         (?\“ . ?\”)
-;;         (?\《 . ?\》)
-;;         (?\[ . ?\])
-;;         (?\< . ?\>)
-;;         (?\` . ?\`)
-;;         (?\「 . ?\」)))
-
 ;; Delete extra trailing whitespaces before save
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
