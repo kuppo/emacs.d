@@ -10,8 +10,9 @@
           ("https://www.kernel.org/feeds/kdist.xml" Kernel-dist Kernel)
           ("https://www.kernel.org/feeds/all.atom.xml" Kernel-archive-atom Kernel)
           ("https://wiki.archlinux.org/index.php?title=Special:RecentChanges&feed=rss" ArchLinux-recent-changes)
+          ("https://www.linux.com/feeds/rss" Linux-news Tech-news)
+          ("http://ergoemacs.org/emacs/blog.xml" Emacs)
+          ("http://xahlee.info/comp/blog.xml" Programming)
           ("https://www.linux.com/feeds/rss" Linux-news Tech-news))))
-
-
 
 (provide 'init-elfeed)
