@@ -1,7 +1,7 @@
 (use-package company
   :diminish company-mode
   :defines (company-dabbrev-ignore-case company-dabbrev-downcase)
-  :commands company-abort
+  :commands company-abort use-package
   :bind (("C-." . company-complete)
          ("<backtab>" . company-yasnippet)
          :map company-active-map
@@ -19,7 +19,6 @@
     (interactive)
     (company-abort)
     (call-interactively 'company-yasnippet))
-  :config
   (setq company-tooltip-align-annotations t
         company-tooltip-limit 12
         company-idle-delay 0
@@ -31,8 +30,10 @@
 
   ;; Better sorting and filtering
   (use-package company-prescient
-    :init (company-prescient-mode 1)
-    :config (prescient-persist-mode 1)))
+    :commands prescient-persist-mode
+    :init
+    (company-prescient-mode 1)
+    (prescient-persist-mode 1)))
 
 
 

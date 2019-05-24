@@ -5,7 +5,7 @@
   counsel-mode
   ivy-mode
 
-  :config
+  :init
   (setq ivy-use-virtual-buffers t)
   (setq ivy-count-format "(%d/%d) ")
   (setq ivy-use-selectable-prompt t)

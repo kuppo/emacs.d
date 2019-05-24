@@ -1,9 +1,10 @@
 (use-package flycheck
   :delight
   (flycheck-mode " FC")
+  :commands use-package
   :hook
   (after-init . global-flycheck-mode)
-  :config
+  :init
   (setq flycheck-indication-mode 'right-fringe)
   (setq flycheck-emacs-lisp-load-path 'inherit)
 

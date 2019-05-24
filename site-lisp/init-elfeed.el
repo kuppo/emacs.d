@@ -1,8 +1,8 @@
 (use-package elfeed
+  :commands elfeed
   :bind
   ("C-x w" . 'elfeed)
-
-  :config
+  :init
   ;; interested feeds
   (setq elfeed-feeds
         '(("http://codefine.site/rss_factory?url=toutiao.io" DEV-news Tech-news)

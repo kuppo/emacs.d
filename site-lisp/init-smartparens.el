@@ -1,8 +1,9 @@
 (use-package smartparens
   :diminish
-  :config
+  :init
   (smartparens-global-mode 1)
   (require 'smartparens-config))
 
 
 (provide 'init-smartparens)
+;;; init-smartparens ends here
