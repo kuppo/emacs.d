@@ -23,6 +23,9 @@
 ;; Initialize company mode.
 (require 'init-company)
 
+;; Initialize flycheck
+(require 'init-flycheck)
+
 ;; Initialize ivy
 (require 'init-ivy)
 
