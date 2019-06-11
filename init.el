@@ -23,6 +23,9 @@
 ;; Initialize company mode.
 (require 'init-company)
 
+;; Initialize yasnippet
+(require 'init-yasnippet)
+
 ;; Initialize flycheck
 (require 'init-flycheck)
 
@@ -38,6 +41,8 @@
 ;; Initialize elfeed
 (require 'init-elfeed)
 
+;; Initialize AUCTeX
+(require 'init-tex)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
