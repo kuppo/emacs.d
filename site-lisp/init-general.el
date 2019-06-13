@@ -20,9 +20,6 @@
       (setq-default save-place t))
   (save-place-mode t))
 
-;; lambda
-(global-prettify-symbols-mode t)
-
 ;; No tool bar if in window system
 (if window-system
     (tool-bar-mode -1))
@@ -44,12 +41,11 @@
 (add-hook 'window-setup-hook 'toggle-frame-maximized t)
 
 ;; Show extra trailing whitespaces
-(setq show-trailing-whitespace t)
+(setq show-trailing-whitespace 1)
 
 ;; Show parenthesis pairs
-(progn
-  (show-paren-mode 1)
-  (setq show-paren-style 'mixed) )
+(show-paren-mode 1)
+(setq show-paren-style 'mixed)
 
 ;; Delete extra trailing whitespaces before save
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
