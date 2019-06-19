@@ -14,7 +14,7 @@
 
   ;; Display Flycheck errors in GUI tooltips
   (if (display-graphic-p)
-      (if (version>= emacs-version "26")
+      (if (>= emacs-major-version 26)
           (use-package flycheck-posframe
             :hook (flycheck-mode . flycheck-posframe-mode)
             :config (add-to-list 'flycheck-posframe-inhibit-functions
