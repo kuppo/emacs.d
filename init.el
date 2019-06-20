@@ -11,6 +11,9 @@
 ;; don't like it.
 (require 'init-general)
 
+;; Initialize fonts
+(require 'init-fonts)
+
 ;; Initialize smartparens
 (require 'init-smartparens)
 
