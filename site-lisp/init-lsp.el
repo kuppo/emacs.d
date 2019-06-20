@@ -15,6 +15,8 @@
         company-lsp-cache-candidates 'auto
         company-enable-recompletion t))
 
+(use-package pyvenv
+  :hook python-mode)
 
 
 (provide 'init-lsp)
