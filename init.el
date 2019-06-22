@@ -41,6 +41,9 @@
 ;; Initialize webmode
 (require 'init-webmode)
 
+;; Initialize lua
+(require 'init-lua)
+
 ;; Initialize elfeed
 (require 'init-elfeed)
 
@@ -54,7 +57,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (counsel swiper auto-package-update elpy py-autopep8 emmet-mode web-mode company-web yasnippet flycheck use-package)))
+    (lsp-sh counsel swiper auto-package-update elpy py-autopep8 emmet-mode web-mode company-web yasnippet flycheck use-package)))
  '(python-shell-interpreter "python3"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
