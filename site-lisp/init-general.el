@@ -41,7 +41,8 @@
 (add-hook 'window-setup-hook 'toggle-frame-maximized t)
 
 ;; Show extra trailing whitespaces
-(setq show-trailing-whitespace 1)
+(setq-default show-trailing-whitespace t)
+(setq indicate-empty-lines t)
 
 ;; Show parenthesis pairs
 (show-paren-mode 1)
