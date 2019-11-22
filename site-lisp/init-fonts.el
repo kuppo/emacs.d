@@ -1,9 +1,9 @@
 ;; Default font
-(set-default-font "Hack 10")
+;; (set-default-font "Hack 10")
 ;; (set-default-font "Consolas 11")
 
 ;; Chinese font
-(set-fontset-font t 'han (font-spec :family "KaiTi" :size 10))
+(set-fontset-font t 'han (font-spec :family "Microsoft Yahei" :size 10))
 
 ;; Chinese font needs to rescale
 (setq face-font-rescale-alist '(("Sarasa Gothic" . 1.6)
