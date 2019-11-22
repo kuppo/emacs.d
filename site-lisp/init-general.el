@@ -80,5 +80,10 @@
   ("S-C-<down>" . shrink-window)
   ("S-C-<up>" . enlarge-window))
 
+;; Open file in view mode
+(add-hook 'find-file-hook
+          (lambda () (view-mode t)))
+
 
 (provide 'init-general)
+;;; init-general.el ends here
