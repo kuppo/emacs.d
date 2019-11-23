@@ -50,6 +50,9 @@
 ;; Initialize AUCTeX
 (require 'init-tex)
 
+;; Post run after initilization
+(require 'init-postinit)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
